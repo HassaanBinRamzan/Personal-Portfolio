@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = ["Front End Developer", "Web Developer"];
+  const toRotate = ["Front End Developer"];
   const period = 2000;
 
   useEffect(() => {
@@ -69,21 +69,23 @@ export const Banner = () => {
                     <span
                       className="txt-rotate"
                       dataPeriod="1000"
-                      data-rotate='["Front End Developer", "Web Developer"]'
+                      data-rotate='["Front End Developer"]'
                     >
                       <span className="wrap">{text}</span>
                     </span>
                   </h1>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                    Hey there! My name is Hassaan Bin Ramzan and I'm a front-end
+                    developer with a passion for creating visually stunning and
+                    user-friendly websites and applications. I specialize in
+                    turning complex designs into responsive and accessible
+                    websites using HTML, CSS, JavaScript, and other front-end
+                    technologies. With my skills and experience, I strive to
+                    deliver exceptional web experiences that engage and delight
+                    users. Explore my portfolio to see some of my recent
+                    projects and learn more about my skills and experience as a
+                    front-end developer.
                   </p>
-                  <button onClick={() => console.log("connect")}>
-                    Let’s Connect <ArrowRightCircle size={25} />
-                  </button>
                 </div>
               )}
             </TrackVisibility>
